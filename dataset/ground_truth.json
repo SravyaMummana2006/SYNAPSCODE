@@ -1,0 +1,482 @@
+[
+  {
+    "pair_id": 1,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/manual_rename.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_rename",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 2,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/manual_structure.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_structure",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 3,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/llm_paraphrase_light.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_light",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 4,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_heavy",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 5,
+    "file1": "p01_binary_search/manual_rename.py",
+    "file2": "p01_binary_search/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_cross_transformed",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 6,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/orig_2.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 7,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p01_binary_search/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 8,
+    "file1": "p01_binary_search/orig_2.py",
+    "file2": "p01_binary_search/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 9,
+    "file1": "p01_binary_search/orig_2.py",
+    "file2": "p01_binary_search/manual_rename.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 10,
+    "file1": "p01_binary_search/orig_3.py",
+    "file2": "p01_binary_search/llm_paraphrase_heavy.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p01_binary_search"
+  },
+  {
+    "pair_id": 11,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/manual_rename.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_rename",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 12,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/manual_structure.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_structure",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 13,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/llm_paraphrase_light.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_light",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 14,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_heavy",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 15,
+    "file1": "p02_merge_intervals/manual_rename.py",
+    "file2": "p02_merge_intervals/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_cross_transformed",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 16,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/orig_2.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 17,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p02_merge_intervals/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 18,
+    "file1": "p02_merge_intervals/orig_2.py",
+    "file2": "p02_merge_intervals/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 19,
+    "file1": "p02_merge_intervals/orig_2.py",
+    "file2": "p02_merge_intervals/manual_rename.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 20,
+    "file1": "p02_merge_intervals/orig_3.py",
+    "file2": "p02_merge_intervals/llm_paraphrase_heavy.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p02_merge_intervals"
+  },
+  {
+    "pair_id": 21,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/manual_rename.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_rename",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 22,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/manual_structure.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_structure",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 23,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/llm_paraphrase_light.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_light",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 24,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_heavy",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 25,
+    "file1": "p03_knapsack/manual_rename.py",
+    "file2": "p03_knapsack/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_cross_transformed",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 26,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/orig_2.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 27,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p03_knapsack/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 28,
+    "file1": "p03_knapsack/orig_2.py",
+    "file2": "p03_knapsack/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 29,
+    "file1": "p03_knapsack/orig_2.py",
+    "file2": "p03_knapsack/manual_rename.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 30,
+    "file1": "p03_knapsack/orig_3.py",
+    "file2": "p03_knapsack/llm_paraphrase_heavy.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p03_knapsack"
+  },
+  {
+    "pair_id": 31,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/manual_rename.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_rename",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 32,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/manual_structure.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_structure",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 33,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/llm_paraphrase_light.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_light",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 34,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_heavy",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 35,
+    "file1": "p04_bfs_shortest_path/manual_rename.py",
+    "file2": "p04_bfs_shortest_path/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_cross_transformed",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 36,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/orig_2.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 37,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p04_bfs_shortest_path/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 38,
+    "file1": "p04_bfs_shortest_path/orig_2.py",
+    "file2": "p04_bfs_shortest_path/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 39,
+    "file1": "p04_bfs_shortest_path/orig_2.py",
+    "file2": "p04_bfs_shortest_path/manual_rename.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 40,
+    "file1": "p04_bfs_shortest_path/orig_3.py",
+    "file2": "p04_bfs_shortest_path/llm_paraphrase_heavy.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 41,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/manual_rename.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_rename",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 42,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/manual_structure.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_manual_structure",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 43,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/llm_paraphrase_light.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_light",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 44,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_llm_heavy",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 45,
+    "file1": "p05_lcs/manual_rename.py",
+    "file2": "p05_lcs/llm_paraphrase_heavy.py",
+    "is_plagiarism": 1,
+    "category": "plagiarism_cross_transformed",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 46,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/orig_2.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 47,
+    "file1": "p05_lcs/orig_1.py",
+    "file2": "p05_lcs/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 48,
+    "file1": "p05_lcs/orig_2.py",
+    "file2": "p05_lcs/orig_3.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 49,
+    "file1": "p05_lcs/orig_2.py",
+    "file2": "p05_lcs/manual_rename.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 50,
+    "file1": "p05_lcs/orig_3.py",
+    "file2": "p05_lcs/llm_paraphrase_heavy.py",
+    "is_plagiarism": 0,
+    "category": "independent_same_problem",
+    "problem": "p05_lcs"
+  },
+  {
+    "pair_id": 51,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p02_merge_intervals/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p01_binary_search_vs_p02_merge_intervals"
+  },
+  {
+    "pair_id": 52,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p03_knapsack/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p01_binary_search_vs_p03_knapsack"
+  },
+  {
+    "pair_id": 53,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p04_bfs_shortest_path/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p01_binary_search_vs_p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 54,
+    "file1": "p01_binary_search/orig_1.py",
+    "file2": "p05_lcs/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p01_binary_search_vs_p05_lcs"
+  },
+  {
+    "pair_id": 55,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p03_knapsack/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p02_merge_intervals_vs_p03_knapsack"
+  },
+  {
+    "pair_id": 56,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p04_bfs_shortest_path/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p02_merge_intervals_vs_p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 57,
+    "file1": "p02_merge_intervals/orig_1.py",
+    "file2": "p05_lcs/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p02_merge_intervals_vs_p05_lcs"
+  },
+  {
+    "pair_id": 58,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p04_bfs_shortest_path/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p03_knapsack_vs_p04_bfs_shortest_path"
+  },
+  {
+    "pair_id": 59,
+    "file1": "p03_knapsack/orig_1.py",
+    "file2": "p05_lcs/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p03_knapsack_vs_p05_lcs"
+  },
+  {
+    "pair_id": 60,
+    "file1": "p04_bfs_shortest_path/orig_1.py",
+    "file2": "p05_lcs/orig_1.py",
+    "is_plagiarism": 0,
+    "category": "independent_diff_problem",
+    "problem": "p04_bfs_shortest_path_vs_p05_lcs"
+  }
+]

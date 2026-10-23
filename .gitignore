@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+jplag_test_out/
+
+# Binaries and archives
+cloudflared.exe
+jplag.jar
+*.zip
+*.tar.gz
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Ensure production UI build in dist is tracked
+!dist/
+!dist/**

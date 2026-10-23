@@ -1,0 +1,66 @@
+{
+  "overall_evaluation": {
+    "baseline": {
+      "roc_auc": 0.854857142857143,
+      "optimal_threshold": 0.03648648648648648,
+      "precision": 0.7419354838709677,
+      "recall": 0.92,
+      "f1_score": 0.8214285714285714,
+      "mean_pairwise_time_ms": 1.9831166447450717,
+      "std_pairwise_time_ms": 0.5821793398153141
+    },
+    "ast_winnowing": {
+      "roc_auc": 0.9279999999999999,
+      "optimal_threshold": 0.27290290290290287,
+      "precision": 0.8,
+      "recall": 0.96,
+      "f1_score": 0.8727272727272728,
+      "mean_pairwise_time_ms": 0.9304683810720841,
+      "std_pairwise_time_ms": 0.27189485824072057
+    }
+  },
+  "llm_robustness_study": {
+    "baseline": {
+      "roc_auc": 0.8428571428571429,
+      "precision": 0.5294117647058824,
+      "recall": 0.9,
+      "f1_score": 0.6666666666666667
+    },
+    "ast_winnowing": {
+      "roc_auc": 0.9342857142857143,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1_score": 0.7692307692307693
+    }
+  },
+  "category_breakdown": {
+    "plagiarism_manual_rename": {
+      "baseline_mean_jaccard": 1.0,
+      "ast_mean_jaccard": 1.0
+    },
+    "plagiarism_manual_structure": {
+      "baseline_mean_jaccard": 0.12330782666618197,
+      "ast_mean_jaccard": 0.3485057471264368
+    },
+    "plagiarism_llm_light": {
+      "baseline_mean_jaccard": 0.2696201147690098,
+      "ast_mean_jaccard": 0.45787233511018677
+    },
+    "plagiarism_llm_heavy": {
+      "baseline_mean_jaccard": 0.0605859240341999,
+      "ast_mean_jaccard": 0.4071482157689054
+    },
+    "plagiarism_cross_transformed": {
+      "baseline_mean_jaccard": 0.0605859240341999,
+      "ast_mean_jaccard": 0.4071482157689054
+    },
+    "independent_same_problem": {
+      "baseline_mean_jaccard": 0.053597754482947214,
+      "ast_mean_jaccard": 0.21330957572133244
+    },
+    "independent_diff_problem": {
+      "baseline_mean_jaccard": 0.023916666666666666,
+      "ast_mean_jaccard": 0.07615114162375826
+    }
+  }
+}
