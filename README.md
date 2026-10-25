@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Python 3.11](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![React 19](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
@@ -74,37 +74,92 @@ Visit **[http://127.0.0.1:5000](http://127.0.0.1:5000)**.
 ## 🚀 Quick Start & Installation
 
 ### Prerequisites
-- Python 3.10+
-- Node.js 18+ (only needed if modifying frontend)
+- **Python**: `3.10`, `3.11`, or `3.12`
+- **Operating System**: Windows, macOS, or Linux
+- **Java (Optional)**: `Java 11+` / `JRE 17+` (only needed if running the third-party JPlag runner `benchmark_jplag.py`)
+- **Node.js (Optional)**: `Node.js 18+` (only needed if modifying the React frontend source; a production-compiled build is already included in `dist/`)
 
-### 1. Clone & Install Dependencies
+---
+
+### 1. Clone & Set Up Environment
+
 ```bash
-git clone https://github.com/SravyaMummana2006/dogfood.git
-cd dogfood/code_plagiarism_detection
+# 1. Clone the dedicated SynapsCode repository
+git clone https://github.com/SravyaMummana2006/SYNAPSCODE.git
+cd SYNAPSCODE
+
+# 2. Create an isolated Python virtual environment
+python -m venv venv
+
+# 3. Activate the virtual environment
+# On macOS / Linux:
+source venv/bin/activate
+# On Windows (PowerShell):
+.\venv\Scripts\Activate.ps1
+# On Windows (Command Prompt):
+.\venv\Scripts\activate.bat
+```
+
+---
+
+### 2. Install Dependencies
+
+Install all core Python dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run Verification Test Suite
+#### Dependencies Breakdown (`requirements.txt`):
+| Package | Version Constraint | Purpose |
+| :--- | :--- | :--- |
+| **`Flask`** | `>=3.0.0` | Powers the REST API backend and serves the compiled React 19 SPA |
+| **`numpy`** | `>=1.26.0` | High-performance vector operations for similarity matrices |
+| **`scikit-learn`** | `>=1.4.0` | Computes ROC-AUC, optimal decision threshold $\tau^*$, and F1 scores |
+| **`matplotlib`** | `>=3.8.0` | Generates publication-grade ROC curves and category bar charts |
+| **`tree-sitter`** | `>=0.22.0` | Concrete Syntax Tree (CST) engine for multi-language AST extraction |
+| **`tree-sitter-cpp`** | `>=0.23.0` | Native Tree-Sitter grammar for C++ code analysis |
+| **`tree-sitter-python`** | `>=0.23.0` | Native Tree-Sitter grammar for Python code analysis |
+| **`waitress`** | `>=3.0.0` | Cross-platform production WSGI server for Windows |
+| **`gunicorn`** | `>=21.2.0` | High-throughput production WSGI server for Linux & Docker |
+
+---
+
+### 3. Launch the Web Application
+
 ```bash
-# Unit tests & SIGMOD 2003 paper trace verification
+python app.py
+```
+Open **[http://127.0.0.1:5000](http://127.0.0.1:5000)** in your browser.
+
+---
+
+### 4. Run Test Suites & Validations
+
+```bash
+# 1. Run unit tests & SIGMOD 2003 paper trace verification (16 tests)
 python tests/test_baseline.py
 python tests/test_ast_engine.py
+python tests/test_multilang.py
 
-# Functional test equivalence verification (175 tests, 100% pass)
+# 2. Validate dataset functional equivalence (175 tests, 100% pass)
 python dataset/validate_dataset.py
-```
 
-### 3. Run Benchmark Evaluation
-```bash
+# 3. Run full empirical benchmark evaluation (generates plots in results/)
 python eval.py
+
+# 4. (Optional) Run official JPlag v5.1.0 3-way benchmark comparison (requires Java)
+python benchmark_jplag.py
 ```
 
-### 4. CLI Usage
+---
+
+### 5. Command-Line Interface (CLI)
+
 ```bash
-# Compare two Python files
+# Pairwise comparison between two source files:
 python cli.py compare dataset/benchmarks/p01_binary_search/orig_1.py dataset/benchmarks/p01_binary_search/llm_paraphrase_heavy.py
 
-# Scan an entire problem cohort
+# Directory matrix scan for suspected plagiarism:
 python cli.py scan dataset/benchmarks/p01_binary_search --threshold 0.25
 ```
 
@@ -132,7 +187,7 @@ Open [http://localhost:5000](http://localhost:5000).
 ## 📁 Repository Structure
 
 ```text
-code_plagiarism_detection/
+SYNAPSCODE/
 ├── ast_engine/
 │   ├── normalizer.py       # Commutative sorting, comparison inversion, OOP neutralization
 │   ├── linearizer.py       # Structural statement & subtree token extraction

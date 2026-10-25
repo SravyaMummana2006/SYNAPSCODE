@@ -1,8 +1,18 @@
+# Core Web Framework
 Flask>=3.0.0
+
+# Numerical & Machine Learning Metrics
 numpy>=1.26.0
-matplotlib>=3.8.0
 scikit-learn>=1.4.0
-tree-sitter>=0.21.0
-tree-sitter-languages>=1.10.0
-waitress>=3.0.0
-gunicorn>=21.2.0
+
+# Scientific Plotting & Visualizations
+matplotlib>=3.8.0
+
+# Multi-Language Tree-Sitter Grammars (C++ & Python)
+tree-sitter>=0.22.0
+tree-sitter-cpp>=0.23.0
+tree-sitter-python>=0.23.0
+
+# Production WSGI Servers (Platform-specific)
+gunicorn>=21.2.0; sys_platform != "win32"
+waitress>=3.0.0; sys_platform == "win32"
